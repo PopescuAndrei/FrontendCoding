@@ -1,0 +1,13 @@
+<div class="container">
+    <ng-form name="myForm" ng-controller="Form" class="my-form">
+        userType: <input name="input" ng-model="userType" required>
+        <span class="error" ng-show="myForm.input.$error.required">Required!</span><br>
+        userType = {{userType}}<br>
+        <br><p>Input properties</p>
+        myForm.input.$valid = {{myForm.input.$valid}}<br>
+        myForm.input.$error = {{myForm.input.$error}}<br>
+        myForm.$valid = {{myForm.$valid}}<br>
+        myForm.$error.required = {{!!myForm.$error.required}}<br>
+        <p>Form Properties</p>
+    </ng-form>
+</div>

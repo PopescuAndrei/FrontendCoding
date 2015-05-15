@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>HR APP</title>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+</head>
+<body>
+<h1>Sample Application</h1>
+
+<div ng-app="hrApp">
+    <div ng-controller="DemoMathController">
+        <p>Number A: <input type="number" ng-model="numberA" ng-change="operations(numberA,numberB)"></p>
+        <p>Number B: <input type="number" ng-model="numberB" ng-change="operations(numberA,numberB)"></p>
+        <div>
+            <p>Sum: <span ng-bind="sumNumbers">{{sumNumbers}}</span></p>
+            <p>Substraction: <span ng-bind="subNumbers">{{subNumbers}}</span></p>
+            <p>Multiplication: <span ng-bind="mulNumbers">{{mulNumbers}}</span></p>
+            <p>Devision: <span ng-bind="divNumbers">{{divNumbers}}</span></p>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="../bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../scripts/app.js"></script>
+<script type="text/javascript" src="../scripts/DemoMathController.js"></script>
+</body>
+</html>

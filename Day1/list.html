@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <title></title>
+</head>
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+
+    <div class="container-fluid">
+        <div class="navbar-header logo">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="title" class="navbar-brand" href="index.jsp">
+                Employee List
+            </a>
+        </div>
+    </div>
+    <!-- Container fluid-->
+</nav>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div>
+            <p>
+                <button onclick="showList()">Show List</button>
+                <button onclick="computeSalaries()">Compute Salaries Total</button>
+                <label for="sortBy">Sort By: </label>
+                <select id="sortBy" name="sortBy">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <button onclick="sort()" onchange="handleChange(this)">Sort</button>
+                <label for="filterBy">Filter By: </label>
+                <input type="text" id="filterBy" name="filterBy">
+                <button onclick="filterList()">Filter</button>
+                <button onclick="filterListCss()">Filter with Style</button>
+            </p>
+        </div>
+        <div id="listcontainer">
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading description">
+        Add employee
+    </div>
+    <div class="panel-body">
+        <p>
+            First Name: <input type="text" id="firstName"/>
+        </p>
+
+        <p>
+            Last Name: <input type="text" id="lastName"/>
+        </p>
+
+        <p>
+            Phone: <input type="text" id="phone"/>
+        </p>
+
+        <p>
+            Salary: <input type="number" id="salary"/>
+        </p>
+
+        <p>
+            <button onclick="addEmployee()">Add employee</button>
+        </p>
+        <p>
+            <button onclick="deleteLastEmployee()">Delete Last Employee</button>
+        </p>
+    </div>
+</div>
+<div>
+    <a href="index.html">Back to Home Page</a>
+</div>
+</body>
+</html>

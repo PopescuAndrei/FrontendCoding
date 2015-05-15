@@ -1,0 +1,20 @@
+<div>
+    <div ng-controller="MathController">
+        <p>Number A: <input type="number" ng-model="a" ng-change="calculate()"></p>
+
+        <p>Number B: <input type="number" ng-model="b" ng-change="calculate()"></p>
+
+        <p>
+            <a class="btn btn-primary btn-log" role="button" ng-click="calculate()">Calculate</a>
+
+        </p>
+
+        <p> a + b = <span ng-bind="op1">{{op1}}</span></p>
+
+        <p> a - b = <span ng-bind="op2">{{op2}}</span></p>
+
+        <p> a * b = <span ng-bind="op3">{{op3}}</span></p>
+
+        <p> a / b = <span ng-bind="op4">{{op4}}</span></p>
+    </div>
+</div>
