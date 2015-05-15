@@ -10,7 +10,7 @@ hrApp.service('jobService', ['$http', 'commonResourcesFactory', function ($http,
                     })
                     .error(function (data) {
                         return {
-                            "jobId": "10",
+                            "jobId": "MG_M",
                             "jobTitle": "President",
                             "maxSalary": 1000,
                             "minSalary": 2000

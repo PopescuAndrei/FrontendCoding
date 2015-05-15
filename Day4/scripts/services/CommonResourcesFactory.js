@@ -9,13 +9,19 @@ hrApp.factory('commonResourcesFactory', function () {
            findOneJobUrl : baseUrl + "jobs/",
            deleteDepartmentUrl : baseUrl + "departments/",
            deleteEmployeeUrl : baseUrl + "employees/",
-           deleteJobUrl : baseUrl + "jobs/delete/",
+           deleteJobUrl : baseUrl + "jobs/",
            addDepartmentUrl : baseUrl + "departments/",
            addEmployeeUrl : baseUrl + "employees/",
-           addJobUrl : baseUrl + "jobs/create",
+           addJobUrl : baseUrl + "jobs/",
            editDepartmentUrl : baseUrl + "departments/",
            editEmployeeUrl : baseUrl + "employees/",
-           editJobUrl : baseUrl + "jobs/edit"
+           editJobUrl : baseUrl + "jobs/",
+           addLocationUrl : baseUrl + "locations/",
+           editLocationUrl : baseUrl + "locations/",
+           deleteLocationUrl: baseUrl + "locations/",
+           findAllLocationsUrl: baseUrl + "locations",
+           findOneLocationUrl: baseUrl + "locations/"
+
         };
     }
 );
